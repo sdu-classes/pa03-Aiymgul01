@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main2 {
+public class Main {
     public static void main(String[] args) throws NumberFormatException{
         Scanner scan  = new Scanner(System.in);
         try{
