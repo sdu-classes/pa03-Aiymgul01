@@ -1,22 +1,26 @@
+
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) throws NumberFormatException{
-        Scanner scan  = new Scanner(System.in);
+
+public class Main{
+    public static void main(String[] args) throws NumberFormatException,ArithmeticException{
+            Scanner scan = new Scanner(System.in);
         try{
-            int a = scan.nextInt();
-            int b = scan.nextInt();
-            Calculator obj1 = new Calculator(a, b);
-            Calculator obj2 = new Calculator(a, b);
-            Calculator obj3 = new Calculator(a, b);
-            Calculator obj4 = new Calculator(a, b);
-            System.out.println("Addition:" + obj1.Add());
-            System.out.println("Substraction:" + obj2.Substract());
-            System.out.println("Multiplication" + obj3.Multiplication());
-            System.out.println("Division :" + obj4.Division());
+
+            int n1 = scan.nextInt();
+            int n2 = scan.nextInt();
+            Calculator obj1 = new Calculator(n1, n2);
+            Calculator obj2 = new Calculator(n1, n2);
+            Calculator obj3 = new Calculator(n1, n2);
+            Calculator obj4 = new Calculator(n1,n2);
+
+            System.out.println("Addition :" + obj1.Add());
+            System.out.println("Subtraction :" + obj2.Subtract());
+            System.out.println("Multiplicatin :" + obj3.Multiplay());
+            System.out.println("Division :" + obj4.Divide());
+
         }
         catch(NumberFormatException n){
-            System.out.println("Please write in integer");
+            System.out.println("You didn't enter an integer");
         }
 
-    }
-}
+    }}
