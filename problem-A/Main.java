@@ -15,12 +15,12 @@ public class Main{
 
             System.out.println("Addition :" + obj1.Add());
             System.out.println("Subtraction :" + obj2.Subtract());
-            System.out.println("Multiplicatin :" + obj3.Multiplay());
-            System.out.println("Division :" + obj4.Divide());
+            System.out.println("Multiplicatin :" + obj3.Multiplication());
+            System.out.println("Division :" + obj4.Division());
 
         }
         catch(NumberFormatException n){
-            System.out.println("You didn't enter an integer");
+            System.out.println("please write in integer");
         }
 
     }}
